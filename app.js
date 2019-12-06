@@ -34,7 +34,6 @@ tl.fromTo(
     { width: "80%", ease: Power2.easeInOut }
   )
   .fromTo(title, 1, { opacity: "0" }, { opacity: "1" })
-
   .fromTo(
     slider,
     0.8,
