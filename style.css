@@ -44,9 +44,8 @@ header {
 
 #name {
   position: absolute;
-  left: 20px;
+  left: 5vh;
   font-size: 50px;
-  margin-left: 30px;
 }
 
 main {
@@ -54,14 +53,10 @@ main {
   height: 70vh;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .hero {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   height: 70%;
   width: 100%;
   position: relative;
@@ -71,7 +66,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: relative;
+  position: absolute;
 }
 
 .hero::after {
@@ -85,7 +80,33 @@ main {
   opacity: 0.5;
 }
 
-.headline {
+.hero .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+  z-index: 1;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero .title h2 {
+  font-size: 100px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+
+.hero .title h3 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+/*.headline {
   position: absolute;
   text-align: center;
   width: 100%;
@@ -99,8 +120,6 @@ main {
 
 .headline2 {
   position: absolute;
-  align-items: center;
-  top: 63%;
   text-align: center;
   width: 100%;
   color: white;
@@ -109,7 +128,7 @@ main {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: lighter;
-}
+}*/
 
 .nav-links {
   z-index: 5;
@@ -163,7 +182,7 @@ main {
 }
 
 @media screen and (max-width: 1030px) {
-  .headline {
+  .hero .title h2 {
     font-size: 80px;
   }
   .burger {
@@ -172,35 +191,57 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
-  .headline {
-    font-size: 80px;
+  .hero .title h2 {
+    font-size: 55px;
   }
-  .burger {
-    right: 10px;
+  .hero .title h3 {
+    font-size: 30px;
+  }
+  .nav-links {
+    height: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
   }
 }
 
-@media screen and (max-width: 414px) {
-  #name {
-    left: 0px;
-  }
-
+@media screen and (max-width: 515px) {
   .burger {
     right: 30px;
   }
 
-  .headline {
+  .hero .title h2 {
     font-size: 50px;
     line-height: 50px;
   }
 
-  .headline2 {
+  .hero .title h3 {
     font-size: 25px;
   }
 
   .nav-links {
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .burger {
+    right: 30px;
+  }
+
+  .hero .title h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .hero .title h3 {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    height: 100%;
+    justify-content: space-evenly;
     flex-direction: column;
   }
 }
