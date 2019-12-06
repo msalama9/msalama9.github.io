@@ -12,34 +12,6 @@ const navSlide = () => {
 
 navSlide();
 
-function aboutIn() {
-  if (this.scrollY > this.innerHeight / 5) {
-    document.body.classList.add("image-in", "para-in", "about-scroll");
-  } else {
-    document.body.classList.remove("image-in", "para-in", "about-scroll");
-  }
-}
-
-window.addEventListener("scroll", aboutIn);
-
-function projIn() {
-  if (this.scrollY > this.innerHeight / 2) {
-    document.body.classList.add(
-      "proj-image-in",
-      "proj-para-in",
-      "project-scroll"
-    );
-  } else {
-    document.body.classList.remove(
-      "proj-image-in",
-      "proj-para-in",
-      "project-scroll"
-    );
-  }
-}
-
-window.addEventListener("scroll", projIn);
-
 const hero = document.querySelector(".hero");
 const slider = document.querySelector(".slider");
 const name = document.querySelector("#name");
