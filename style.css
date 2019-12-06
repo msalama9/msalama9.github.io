@@ -163,8 +163,12 @@ main {
 .nav-links a:hover {
   color: #09e7ca;
   padding: 20px 10px;
-  background-color: #1b2a49;
+  background-color: #424d61;
   border-radius: 50px;
+}
+
+.nav-links a:active {
+  color: #bbbcf5;
 }
 
 .nav-active {

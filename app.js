@@ -43,8 +43,7 @@ window.addEventListener("scroll", projIn);
 const hero = document.querySelector(".hero");
 const slider = document.querySelector(".slider");
 const name = document.querySelector("#name");
-const headline = document.querySelector(".headline");
-const headlineTwo = document.querySelector(".headline2");
+const title = document.querySelector(".title");
 const burger = document.querySelector(".burger");
 const about = document.querySelector(".hero-about");
 
@@ -62,8 +61,8 @@ tl.fromTo(
     { width: "100%" },
     { width: "80%", ease: Power2.easeInOut }
   )
-  .fromTo(headline, 1, { opacity: "0" }, { opacity: "1" })
-  .fromTo(headlineTwo, 1, { opacity: "0" }, { opacity: "1" }, "-=1")
+  .fromTo(title, 1, { opacity: "0" }, { opacity: "1" })
+
   .fromTo(
     slider,
     0.8,
