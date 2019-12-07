@@ -13,8 +13,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>About</title>
+    <title>My Portfolio</title>
   </head>
+
   <body>
     <section>
       <header>
@@ -25,14 +26,6 @@
           <div class="line3"></div>
         </div>
       </header>
-      <main>
-        <div class="hero">
-          <img src="mountain3.jpg" alt="" />
-          <div class="title">
-            <h2 class="headline">About Me</h2>
-          </div>
-        </div>
-      </main>
     </section>
 
     <nav>
@@ -53,6 +46,49 @@
         </ul>
       </div>
     </nav>
+
+    <div class="contact">
+      <div class="contact-header">
+        <h1>Contact Me</h1>
+      </div>
+      <div class="contact-form">
+        <form
+          class="contact-form"
+          method="post"
+          action="contact-form.php"
+          autocomplete="off"
+        >
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            placeholder="Your Name"
+            required
+          />
+          <br />
+          <input
+            name="email"
+            type="email"
+            class="form-control"
+            placeholder="Your Email"
+            required
+          />
+          <br />
+          <textarea
+            name="message"
+            class="form-control"
+            placeholder="Message"
+            cols="25"
+            rows="10"
+            required
+          ></textarea>
+          <br />
+          <button type="submit" name="submit" class="form-control submit">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
 
     <div class="slider"></div>
     <script

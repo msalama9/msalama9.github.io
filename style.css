@@ -185,6 +185,50 @@ main {
   transform: rotate(45deg) translate(-5px, -13px);
 }
 
+.contact {
+  text-align: center;
+  color: white;
+  transition: all 1s ease-in;
+}
+
+.contact-header {
+  font-size: 30px;
+}
+
+.form-control {
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0;
+  border: 1px solid black;
+  outline: none;
+  width: 20%;
+  height: 15%;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.form-control:focus {
+  width: 30%;
+  transition: width 0.3s ease;
+  background-color: white;
+}
+
+form .submit {
+  background-color: white;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+}
+
+form .submit:hover {
+  background-color: rgb(55, 110, 55);
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
 @media screen and (max-width: 1030px) {
   .hero .title h2 {
     font-size: 80px;
