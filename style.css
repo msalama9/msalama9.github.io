@@ -188,7 +188,6 @@ main {
 .contact {
   text-align: center;
   color: white;
-  transition: all 1s ease-in;
 }
 
 .contact-header {
@@ -230,11 +229,14 @@ form .submit:hover {
 }
 
 @media screen and (max-width: 1030px) {
+  #name {
+    font-weight:bolder;
+  }
   .hero .title h2 {
     font-size: 80px;
   }
   .burger {
-    right: 10px;
+    right: 30px;
   }
   .form-control {
     width: 50%;
@@ -244,6 +246,9 @@ form .submit:hover {
 }
 
 @media screen and (max-width: 1000px) {
+  .burger {
+    right: 30px;
+  }
   .hero .title h2 {
     font-size: 55px;
   }
@@ -296,12 +301,12 @@ form .submit:hover {
   }
 
   .hero .title h2 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
   }
 
   .hero .title h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .nav-links {
@@ -314,5 +319,8 @@ form .submit:hover {
   }
   .form-control:focus {
     width: 80%;
+  }
+  .contact-header{
+    font-size: 25px;
   }
 }
