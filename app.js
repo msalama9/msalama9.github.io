@@ -39,12 +39,18 @@ tl.fromTo(
     0.8,
     { x: "-100%" },
     { x: "0%", ease: Power2.easeInOut },
-    "-=1.2"
+    "-=1.3"
   )
-  .fromTo(burger, 1, { opacity: "0", x: "30" }, { opacity: "1", x: "0" }, "-=1")
+  .fromTo(
+    burger,
+    0.8,
+    { opacity: "0", x: "30" },
+    { opacity: "1", x: "0" },
+    "-=1"
+  )
   .fromTo(
     name,
-    0.8,
+    0.5,
     { opacity: "0", x: "-30" },
     { opacity: "1", x: "0", ease: Power2.easeInOut },
     "-=1"
