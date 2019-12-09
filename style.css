@@ -269,6 +269,11 @@ form .submit:hover {
 }
 
 @media screen and (max-width: 515px) {
+
+#name {
+  font-weight: bolder;
+}
+
   .burger {
     right: 30px;
   }
@@ -286,6 +291,9 @@ form .submit:hover {
     height: 100%;
     justify-content: space-evenly;
     flex-direction: column;
+  }
+  .nav-links a {
+    font-size: 35px;
   }
   .form-control {
     width: 60%;
