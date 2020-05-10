@@ -394,6 +394,9 @@ svg:hover {
     justify-content: center;
     align-self: center;
   }
+  .top-arrow {
+    margin: -200px auto 0 auto;
+  }
 
   .name {
     margin: 0;
