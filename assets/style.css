@@ -15,7 +15,6 @@ body {
 nav {
   position: relative;
   display: flex;
-  height: 100px;
   justify-content: space-between;
   align-items: center;
   z-index: 2;
@@ -34,7 +33,7 @@ nav {
 }
 
 nav h1 {
-  margin-left: 100px;
+  margin: 10px 0 0 100px;
   font-size: 50px;
   letter-spacing: 1.5px;
   color: #a098fd;
@@ -44,7 +43,7 @@ nav h1 {
 .nav-menu ul {
   display: flex;
   width: 100%;
-  margin: 10px 100px 0 0;
+  margin: 10px 100px 0 1000px;
   list-style: none;
   animation: top-in 0.8s;
 }
@@ -353,4 +352,87 @@ svg:hover {
   margin: 20px auto;
   font-size: 30px;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+  }
+
+  nav h1 {
+    font-size: 70px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  .burger-nav {
+    position: absolute;
+    margin: 0;
+    transform: translate(100%, -10px);
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+  }
+  .burger-nav ul {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .burger-nav ul li a {
+    font-size: 60px;
+  }
+
+  .landing {
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .name {
+    margin: 0;
+    text-align: center;
+  }
+  .name h2 {
+    font-size: 40px;
+  }
+  .name h3 {
+    font-size: 30px;
+  }
+
+  .landing img {
+    width: 300px;
+  }
+
+  .info p {
+    font-size: 20px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .container {
+    margin-top: 50px;
+    width: 95%;
+  }
+  .container i {
+    font-size: 35px;
+  }
+  .container p {
+    font-size: 20px;
+    margin: 0;
+  }
+  .fixed-footer {
+    width: 100vw;
+  }
+  .fixed-footer i {
+    font-size: 30px;
+  }
+  .fixed-footer p {
+    font-size: 10px;
+  }
 }
