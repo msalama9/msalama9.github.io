@@ -9,6 +9,7 @@ body {
   font-family: Nunito, sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: smooth;
 }
 
 /* navigation */
@@ -413,14 +414,16 @@ svg:hover {
   .landing img {
     width: 300px;
   }
-
+  .info h2 {
+    font-size: 30px;
+  }
   .info p {
     font-size: 20px;
     margin-top: 50px;
     width: 100%;
   }
   .container {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 95%;
   }
   .container i {
