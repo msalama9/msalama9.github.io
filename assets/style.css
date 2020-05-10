@@ -8,6 +8,7 @@
 body {
   font-family: Nunito, sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* navigation */
@@ -223,12 +224,16 @@ svg:hover {
 
 /* about page styles */
 .about {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative;
   margin-bottom: 200px;
   background-color: #ededf5;
-  z-index: 10;
+  z-index: 5;
+}
+
+.about-container {
+  margin-top: 70px;
 }
 
 .img-1 {
@@ -240,13 +245,9 @@ svg:hover {
   float: right;
   margin: 0 450px 0 30px;
 }
-.about-container {
-  margin-top: 100px;
-}
 
-.about-container img {
-  width: 350px;
-  height: 300px;
+.img-2-container {
+  margin-top: 80px;
 }
 
 .about-p {
