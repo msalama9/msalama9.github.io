@@ -389,13 +389,13 @@ svg:hover {
 
   .landing {
     position: absolute;
-    top: 50px;
+    top: 0;
     flex-direction: column;
     justify-content: center;
     align-self: center;
   }
   .top-arrow {
-    margin: -200px auto 0 auto;
+    margin: -250px auto 0 auto;
   }
 
   .name {
