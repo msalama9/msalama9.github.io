@@ -363,7 +363,7 @@ svg:hover {
     padding: 10px;
   }
 
-  button {
+  .burger {
     margin-right: 30px;
     display: flex;
     flex-direction: column;
@@ -374,7 +374,7 @@ svg:hover {
     width: 40px;
     height: 3px;
     margin: 5px 0;
-    background-color: black;
+    background-color: #a098fd;
   }
 
   .burger-nav {
