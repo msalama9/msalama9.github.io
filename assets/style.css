@@ -389,6 +389,7 @@ svg:hover {
 
   .nav-in {
     transform: translate(0, 44%);
+    overflow: hidden;
   }
 
   .burger-nav ul {
