@@ -1,10 +1,8 @@
 const navSlide = () => {
-  const burger = document.querySelector("button");
+  const burger = document.querySelector(".burger");
   const parentNode = document.querySelector(".item-one").parentNode;
   const firstItem = document.querySelector(".item-one");
   const nav = document.querySelector(".burger-nav");
-  const list = document.querySelector("ul");
-  const closeButton = document.querySelector(".close");
   const listItem = document.createElement("li");
   const link = document.createElement("a");
 
@@ -17,8 +15,8 @@ const navSlide = () => {
   });
 
   link.addEventListener("click", () => {
-    nav.classList.remove("nav-in");
     parentNode.removeChild(listItem);
+    nav.classList.remove("nav-in");
   });
 };
 
