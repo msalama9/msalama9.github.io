@@ -140,7 +140,7 @@ header {
 .top-arrow {
   position: relative;
   display: block;
-  margin: -150px auto 0 auto;
+  margin: -150px auto 50px auto;
   font-size: 50px;
   font-weight: bolder;
   border-radius: 10px;
@@ -178,9 +178,7 @@ svg:hover {
 
 .section-title {
   position: relative;
-  top: 30px;
   text-align: center;
-  margin-top: 50px;
 }
 
 .section-title h2 {
